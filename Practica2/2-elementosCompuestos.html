@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos compuestos</title>
+</head>
+<body>
+    <h1>Explicación de elementos compuestos LaunchX</h1>
+
+    <!-- Labels / Etiquetas: Sirve para ligarlo o relacionarlo con una entrada/input y saber qué es lo que se debe introducir en la entrada/input -->
+    <label for="Input1"> Ejemplo de Input de Texto</label>
+    <br>
+    <!-- Entradas / Inputs: Aquí se podrán introducir datos, sirven para el llenado de formularios y hay de distintos tipos -->
+    <input type="text" id="Input1" name="Input1">
+    <br><br>
+
+    <hr>
+    <!-- Tipos de Inputs -->
+    <h2>Input De Texto</h2>
+    <!--Revisa que tenga un dominio y un "@"-->
+    <label for="correo1">Input de Correo</label><br>
+    <input type="email" id="correo1" name="correo1"><br><br>
+    
+    <!--Revisa que se introduzca un número-->
+    <label for="numero1">Input de número</label><br>
+    <input type="number" id="numero1" name="numero1"><br><br>
+    
+    <!--Oculta los carácteres escritos en la caja de texto-->
+    <label for="psw1">Input de Password</label><br>
+    <input type="password" id="psw1" name="psw1"><br><br>
+    
+    <!--Revisa que se escriban números, con una longitud de 10 números gracias a la propiedad de "maxlength"-->
+    <label for="tel1">Input de Teléfono</label><br>
+    <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+    
+    <!--Revisa que se escriba un dominio-->
+    <label for="url1">Input de URL</label><br>
+    <input type="url" id="url1" name="url1"><br><br>
+
+    <hr>
+
+    <h2>Input de selección multiple</h2><br>
+    <!--Input tipo checkbox, sirve para saber qué cosas se quieren seleccionar, se puede seleccionar 1 o varias-->
+    <input type="checkbox" id="topping1" name="topping1" value="Cebolla">
+    <label for="topping1">Tacos con Cebolla</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Cilantro">
+    <label for="topping2">Tacos con Cilantro</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Salsa">
+    <label for="topping3">Tacos con Salsa</label><br><br>
+    
+    <h2>Input de selección única</h2><br>
+    <!--Input tipo radio, sirve para saber qué cosa se quiere seleccionar, sólo se puede seleccionar 1-->
+    <input type="radio" id="roja" name="salsas" value="Roja">
+    <label for="roja">Roja</label><br>
+    <input type="radio" id="verde" name="salsas" value="Verde">
+    <label for="verde">Verde</label><br>
+    <input type="radio" id="guacamole" name="salsas" value="Guacamole">
+    <label for="guacamole">Guacamole</label><br><br>
+
+    <h2>Select</h2>
+    <!--Select: Despliega una lista de lo que se puede seleccionar, sólo se puede seleccionar 1-->
+    <label for="tacos">De que la orden</label>
+    <select id="tacos" name="tacos">
+        <option value="suadero">Suadero</option>
+        <option value="pastor">Pastor</option>
+        <option value="campechanos">Campechanos</option>
+        <option value="tripa">Tripa</option>
+    </select>
+    
+    <h2>Select con Input</h2>
+    <!--Puedes escribir la entrada y detecta lo que estás escribiendo y lo puedes autocompletar-->
+    <label for="refresco">Elige tu refresco favorito</label><br>
+    <input list="refresco">
+    <!--Lista de datos, se puede referenciar de distintas partes, no solamente escribiendo dato por dato-->
+    <datalist id="refresco">
+        <option value="Coca-Cola">
+        <option value="Manzana">
+        <option value="Naranja">
+        <option value="Mango">
+        <option value="Guayaba">
+    </datalist>
+    <br><br>
+
+    <hr>
+    
+    <h2>Input de Fecha</h2><br>
+    <!--Permite seleccionar un día-->
+    <input type="date" id="fecha1" name="fecha1"><br>
+    
+    <!--Permite seleccionar un día pero este incluye la hora-->
+    <input type="datetime-local" id="fecha2" name="fecha2"><br>
+    
+    <!--Permite seleccionar la semana-->
+    <input type="week" id="fecha3" name="fecha3"><br>
+    
+    <!--Sirve para seleccionar la hora-->
+    <input type="time" id="fecha4" name="fecha4"><br>
+
+    <!--Sirve para seleccionar un mes en específico-->
+    <input type="month" id="fecha5" name="fecha5"><br><br>
+    
+    <hr>
+    
+    <h2>Input de archivo</h2><br>
+    <!--Sirve para poder subir un documento, tiene la propiedad de "multiple" que sirve para poder subir más de un archivo-->
+    <input type="file" id="archivo1" name="archivo1" multiple><br><br>
+    
+    <h2>Input de Color</h2><br>
+    <!--Sirve para poder seleccionar un color-->
+    <input type="color" id="color1" name="color1"><br><br>
+    
+    <h2>Input de Rango</h2>
+    <!--Sirve para poder elegir un número dentro de un rango, estos rangos están delimitados por la propiedad de "min" y "max"-->
+    <label for="vol">Volumen (entre 0 y 50):</label><br>
+    <input type="range" id="vol" name="vol" min="0" max="50"><br>
+    
+    <hr>
+    
+    <h2>Input de botón</h2>
+    
+    <!--Sirve para resetear/limpiar un formulario-->
+    <input type="reset"><br>
+
+    <!--Sirve para envíar los datos llenados en un formulario-->
+    <input type="submit"><br>
+
+    <!--Un botón con la propiedad de onclick, que realiza una alerta cuando se hace click sobre el botón-->
+    <input type="button" id="boton1" name="boton1" value="Botón 1" onclick="alert('Bienvenidos explorers');"><br><br>
+    
+    <hr>
+    <!-- Formularios -->
+    <h2>Ejemplo de Formulario</h2>
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    
+    <!--A pesar de que estas etiquetas estén fuera del form, seguirán siendo afectadas por todas las acciones que se realicen en el form, esto porque también posee la propiedad de "id="form1""-->
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" form="form1">
+    
+</body>
+</html>

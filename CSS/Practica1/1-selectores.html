@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <style>
+        /* Cascade Style Sheet CSS */
+        /*Selector de asterisco: El asterisco se refiere a todo lo que se implemente en el html */
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*Selector de body: Todo dentro de la etiqueta body */
+        body{
+            background-color: aqua;
+        }
+        /*Selector de párrafo: Todo dentro de la etiqueta p*/
+        p{
+            color: red;
+            text-align: center;
+        }
+        /*Selector con id: lo que tenga el id "titulo" tendrá este estilo*/
+        #titulo{
+            color: rgb(200,150,220);
+            text-align: right;
+        }
+        /*Selector con class: lo que tenga el class "izquierda" tendrá este estilo*/
+        .izquierda{
+            color: green;
+        }
+        /*Todas las p con class="izquierda" tendrá este estilo*/
+        p.izquierda{
+            text-decoration: underline;
+            text-align: left;
+        }
+        /*Todas las class="contraste" recibirán este estilo*/
+        .contraste{
+            background-color: black;
+        }
+        /* Todos los h1, h2 y p recibirán este estilo */
+        h1, h2, p{
+            font-weight: bold;
+        }
+
+        /* Lo que esté más abajo sobreescribe lo de arriba */
+        /* Comentario CSS */
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Header simple</h1>
+    <!-- El id y el class pueden usarse para ser selectores -->
+    <h2 id="titulo" class="izquierda">Header con id Titulo</h2>
+    <p>Parrafo simple</p>
+
+    <h3 class="izquierda">Prueba clase Header 3</h3>
+    <p class="izquierda">Prueba clase parrafo</p>
+    <!-- Clases múltiples -->
+    <h3 class="izquierda contraste">Prueba multiples clases parrafo</h3>
+    
+</body>
+</html>

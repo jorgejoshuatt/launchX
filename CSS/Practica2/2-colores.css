@@ -1,0 +1,27 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 20px;
+}
+/* Color sólido */
+.colorRojo{
+    color: red;
+}
+/* Color con % de red, % de green, % de blue */
+.colorRGB{
+    color: rgb(93, 113, 218);
+}
+/* Color igual que RGB pero con transparencia */
+.colorRGBA{
+    color: rgba(93, 217, 94, 0.6);
+}
+/* Color con hexadecimal */
+.colorHEX{
+    color: #EE43E3;
+}
+/* Color con HSL */
+.colorHSL{
+    color: hsl(30, 68%, 31%);
+}

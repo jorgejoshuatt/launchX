@@ -1,0 +1,52 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Tamaño del section y div*/
+section{
+    height: 400px;
+}
+
+div{
+    height: 400px;
+}
+
+.fondoColor{
+    background-color: #0f6666;
+}
+
+.fondoOpacidad{
+    background-color: #5d0c0c;
+    opacity: 0.6;
+}
+
+.fondoImagen{
+    background-image: url("../images/fondo1.jpg");
+}
+/* Se repite en la posición x*/
+.fondoRepetidoX{
+    background-image: url("../images/fondo2.jpg");
+    background-repeat: repeat-x;
+}
+/* Se repite en la posición y*/
+.fondoRepetidoY{
+    background-image: url("../images/fondo1.jpg");
+    background-repeat: repeat-y;
+}
+/* No se repite*/
+.fondoNoRepetido{
+    background-image: url("../images/fondo2.jpg");
+    background-repeat: no-repeat;
+}
+/* No se repite y se coloca abajo a la derecha*/
+.fondoPosicion{
+    background-image: url("../images/fondo1.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+/* No se repite, se coloca en el centro y cover es para que adopte todo el tamaño de la section*/
+.fondoCompleto{
+    background-image: url("../images/fondo2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

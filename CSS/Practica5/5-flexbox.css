@@ -1,0 +1,22 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contenedor{
+    min-height: 400px;
+    background-color: rgb(143, 143, 143);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.elemento{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(115, 18, 18);
+    border: 2px;
+    border-style: dotted;
+    border-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+}

@@ -4,11 +4,11 @@ Programas y prácticas realizadas en el curso de Microsoft de innovacción virtu
 
 ## Construido con 🛠️
 
-* HTML
-* CSS
-* JS
-* ANGULAR
-* AZURE
+* HTML5 :skull:
+* CSS :cowboy_hat_face:
+* JavaScript :brain:	
+* ANGULAR :a:
+* AZURE :cloud:
 
 ## Autores ✒️
 
